@@ -158,7 +158,7 @@ public class LockActivity extends Activity implements View.OnClickListener {
         editor.commit();
         saveStatePass(true);
     }
-    
+
    public  void loadText(Context context) {
 
        SharedPreferences sharedPreferences = PreferenceManager

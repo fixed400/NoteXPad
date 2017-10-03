@@ -23,6 +23,14 @@
 
 
 
+    <string name="info">Приложение NoteXPad для Android
+Записи сделанные с помощью NoteXPad храняться в базе данных устройства
+Сделанные записи сохраняются автоматически.
+Нажмите на белый крестик (слева внизу) для добавления новой записи.
+Для удаления конкретной записи нажмите и удерживайте на одноим из элементов списка.</string>
+
+
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>

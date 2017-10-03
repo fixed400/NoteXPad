@@ -207,7 +207,7 @@ public class NoteEditor extends Activity{
 
                 AlertDialog.Builder dialog = new AlertDialog.Builder(NoteEditor.this);
                 dialog.setTitle("About");
-                dialog.setMessage(new ContentsListActivity().languageLocale());
+                dialog.setMessage(getResources().getString(R.string.info));
                 dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
                     @Override

@@ -41,7 +41,6 @@ public class ContentsListActivity extends ListActivity {
 
     private DB workDbHelper;
 
-    LanguageTranslate cur_l = new LanguageTranslate() ;
     SimpleCursorAdapter simpleCursorAdapter;
 
     @Override
@@ -92,7 +91,9 @@ public class ContentsListActivity extends ListActivity {
 
                 AlertDialog.Builder dialog = new AlertDialog.Builder(ContentsListActivity.this);
                 dialog.setTitle("About");
-                dialog.setMessage( languageLocale() );
+              //  dialog.setMessage( languageLocale() );
+                dialog.setMessage( getResources().getString(R.string.info) );
+
                 dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 
                     @Override
@@ -119,19 +120,6 @@ public class ContentsListActivity extends ListActivity {
         }
     }
 
-    public String languageLocale(){
-
-        String lv = getResources().getConfiguration().locale.getLanguage();
-        String res;
-
-        if(lv.equals("ru") || lv.equals("ua"))
-        {
-            res =  cur_l.uLanguageTm() ;
-        }else{
-            res =  cur_l.wLanguageTm();
-        }
-        return  res;
-    }
 
     private void createNote() {
         Intent item_note = new Intent(this, NoteEditor.class);

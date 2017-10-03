@@ -18,6 +18,11 @@
     <string name="delete_menu_noteedit">Delete</string>
     <string name="title_activity_login">Sign in</string>
 
+    <string name="info">Application NoteXPad for Android
+Recordings made using NoteXPad are stored in the device database.
+Click on white cross (bottom left) to add a new notes
+To remove one note should press and hold in the same name item in the list</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>

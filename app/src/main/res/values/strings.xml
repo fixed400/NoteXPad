@@ -1,0 +1,33 @@
+<resources>
+    <!--
+    <string name="app_name">Note XPad</string>
+  -->
+    <!--
+    <string name="app_name">Заметки</string>
+ -->
+
+    <string name="app_name">Notes</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="about">About</string>
+    <string name="title">Title: </string>
+    <string name="menu_delete">Delete this note ?</string>
+    <string name="no_title">No Title</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="save_menu_noteedit">Save</string>
+    <string name="delete_menu_noteedit">Delete</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

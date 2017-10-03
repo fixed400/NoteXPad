@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    <EditTextPreference android:title="Your Name"
+        android:key="username"
+        android:summary="Please provide your username"></EditTextPreference>
+    -->
+    <CheckBoxPreference android:title="Text Толщина / Thickness"
+        android:defaultValue="false"
+        android:summary="Select the text thick"
+        android:key="textThickness" />
+    <ListPreference     android:title="Выбрать стиль текста"
+        android:summary="Select the text font"
+        android:key="textFontPref"
+        android:defaultValue="3"
+        android:entries="@array/listArray_TextFont"
+        android:entryValues="@array/listValuesFonts" />
+    <ListPreference     android:title="Выбрать размер текста"
+        android:summary="Select the text size"
+        android:key="textSizePref"
+        android:defaultValue="4"
+        android:entries="@array/listArray_TextSize"
+        android:entryValues="@array/listValuesSizes" />
+    <ListPreference     android:title="Выбрать цвет текста"
+        android:summary="Select the text color"
+        android:key="textColorPref"
+        android:defaultValue="1"
+        android:entries="@array/listArray_TextColor"
+        android:entryValues="@array/listValuesColor" />
+</PreferenceScreen>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <resources>
+        <string-array name="listArray_TextFont">
+            <item>casual</item>
+            <item>cursive</item>
+            <item>sans-serif-light</item>
+            <item>monospace</item>
+        </string-array>
+
+        <string-array name="listValuesFonts">
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+        </string-array>
+
+    <!--        array2      -->
+    <string-array name="listArray_TextSize">
+        <item>Size:10px</item>
+        <item>Size:14px</item>
+        <item>Size:18px</item>
+        <item>Size:24px</item>
+        <item>Size:32px</item>
+        <item>Size:48px</item>
+    </string-array>
+
+    <string-array name="listValuesSizes">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+
+    </string-array>
+    <!--        array3      -->
+    <string-array name="listArray_TextColor">
+        <item>Black</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+    </string-array>
+
+    <string-array name="listValuesColor">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    </resources>

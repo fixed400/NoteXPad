@@ -41,36 +41,9 @@
             android:textColor="#ff9d00"
             android:paddingRight="10sp"
             android:textSize="16sp" />
-        <!--
-            <TextView
-        android:id="@+id/notelist_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:textColor="@color/textbody"
-        android:textColor="#25383C"
-        android:paddingRight="10sp"
-        android:textSize="12sp" />	  -->
-
 
     </LinearLayout>
 
-    <!--
-    <view
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/body"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/toplayout"
-        class="com.example.note.NoteEdit$LineEditText"
-        android:background="@android:color/transparent"
-        android:capitalize="sentences"
-        android:fadingEdge="vertical"
-        android:gravity="top"
-        android:padding="5dp"
-        android:scrollbars="vertical"
-        android:textSize="22sp" />
-         -->
 
     <view
         xmlns:android="http://schemas.android.com/apk/res/android"

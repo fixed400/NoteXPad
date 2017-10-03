@@ -137,24 +137,7 @@ public class LockActivity extends Activity implements View.OnClickListener {
 
     }
 
-    private void deletePass() {
 
-        editor = sharedPreferences.edit();
-
-        editor.putBoolean("my_pakage",  false);
-        editor.commit();
-
-        //.....
-        saveStatePass(false);
-    }
-    private void resetPass(){
-
-        editor = sharedPreferences.edit();
-
-        editor.putBoolean("my_pakage",  false);
-        editor.commit();
-
-    }
 
     // анализируем, какая кнопка была нажата. Всего один метод для всех кнопок
     @Override

@@ -22,7 +22,7 @@ public class PreferencesActivity extends PreferenceActivity {
 
 
     static SharedPreferences sharedPreferences;
-   public static SharedPreferences.Editor editor;
+    public static SharedPreferences.Editor editor;
 
 
 
@@ -72,7 +72,6 @@ public class PreferencesActivity extends PreferenceActivity {
         return typeface;
     }
 
-
     static final String SAVED_TEXT = "saved_text";
 
         @Override
@@ -84,25 +83,7 @@ public class PreferencesActivity extends PreferenceActivity {
             sharedPreferences = PreferenceManager
                     .getDefaultSharedPreferences(this);
             editor = sharedPreferences.edit();
-
-
         }
-
-   public static void saveStatePass(boolean state) {
-
-         editor = sharedPreferences.edit();
-        editor.putBoolean(SAVED_TEXT,  state);
-        editor.commit();
-
-    }
-
-   public static boolean loadStatePass() {
-
-       boolean state;
-       return state  = sharedPreferences.getBoolean(SAVED_TEXT,false);
-
-    }
-
 
     public static void setTextBold(SharedPreferences sharedPreferences ){
 
@@ -123,8 +104,6 @@ public class PreferencesActivity extends PreferenceActivity {
             setTypeface(0);
         }
     }
-
-
 
     public static void loadStyleText(SharedPreferences sharedPreferences) {
 
@@ -209,8 +188,6 @@ public class PreferencesActivity extends PreferenceActivity {
                 break;
         }
 
-
-
     }
 
     public static void setColorTxt(SharedPreferences sharedPreferences){
@@ -236,7 +213,6 @@ public class PreferencesActivity extends PreferenceActivity {
                 mBodyText.setTextColor(Color.BLUE);
                 mTitleText.setTextColor(Color.BLUE);
                 break;
-
         }
 
     }
@@ -246,6 +222,5 @@ public class PreferencesActivity extends PreferenceActivity {
         super.onDestroy();
 
     }
-
 
 }

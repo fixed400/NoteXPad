@@ -48,15 +48,12 @@ public class NoteEditor extends Activity{
     private Long mRowId;
     public static Long idNote;
 
-
     private Cursor note_item;
     Intent mShareIntent;
-    private ShareActionProvider mShareActionProvider;
     static SharedPreferences mySharedPreferences;
+    private ShareActionProvider mShareActionProvider;
 
     private DB modeDbHelper;
-
-
 
     public Context context;
 
@@ -115,13 +112,11 @@ public class NoteEditor extends Activity{
             mPaint = new Paint();
             mPaint.setStyle(Paint.Style.STROKE);
             mPaint.setColor(Color.parseColor("#d2e2db"));
-
         }
 
         private Rect mRect;
         private Paint mPaint;
 
-        //рисование
         @Override
         protected void onDraw(Canvas canvas) {
 
@@ -154,7 +149,6 @@ public class NoteEditor extends Activity{
         super.onSaveInstanceState(outState);
         saveState();
         outState.putSerializable(DB.FIELD_ROWID, mRowId);
-
     }
 
     @Override
@@ -236,8 +230,6 @@ public class NoteEditor extends Activity{
 
                 startActivity(i_encrypt);
                 return true;
-
-
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -262,7 +254,6 @@ public class NoteEditor extends Activity{
         }
     }
 
-
     private void fillingTableFields() {
         if (mRowId != null) {
             note_item = modeDbHelper.getOne(mRowId);
@@ -277,13 +268,10 @@ public class NoteEditor extends Activity{
         }
     }
 
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
         Log.d("LOG_NoteEditor", " onDestroy()");
-
     }
-
 
 }

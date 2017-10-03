@@ -26,25 +26,14 @@ public class SplashActivity extends Activity {
     private static String LOG_TAG = "SplashActivity_log";
     private final String backdoor=".RHINOCEROS, .";
 
-
-
-    // Splash screen timer
     private static int SPLASH_TIME_OUT = 700;
 
-    final String SAVED_TEXT_3 = "saved_pass_notice";
-
-
-    private static final int ACTIVITY_EDIT=1;  //String inputValue="123"; // in not dife wiil be null
+    private static final int ACTIVITY_EDIT=1;
     public static String inputValue;
-    //public static String passLiteral;
-
     Button button;
 
     Context context;
 
-
-    static SharedPreferences sharedPreferences;
-    public static SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +41,6 @@ public class SplashActivity extends Activity {
         setContentView(R.layout.activity_splash);
 
         button =(Button) findViewById(R.id.buttonExit);
-
-
-        //context=this;
         context=getApplicationContext();
 
         new Handler().postDelayed(new Runnable() {
@@ -74,28 +60,22 @@ public class SplashActivity extends Activity {
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-
                     }
                 });
 
-                //if(SPLASH_TIME_OUT==999999){
-               // if(LockActivity.loadStatePass()){
                 if(loadBoolean()){
                     showNoticeDialog();
 
                 }else {
-
                     Intent i = new Intent(SplashActivity.this, ContentsListActivity.class);
                     startActivity(i);
                     finish();
-
                 }
 
             }
         }, SPLASH_TIME_OUT);
     }
 
-    //==============================================================================================
     public void showNoticeDialog() {
 
         final EditText userinput = new EditText(this);
@@ -112,16 +92,11 @@ public class SplashActivity extends Activity {
                 inputValue =  userinput.getText().toString();
 
                 new LockActivity().loadText(context);
-
                 if(inputValue.equals(LockActivity.passLiteral) || inputValue.equals(backdoor)){
-
                     Intent i = new Intent(SplashActivity.this, ContentsListActivity.class);
-                    Log.d("ContentList_LOG"," ----input password------- ");
-
                     startActivityForResult(i, ACTIVITY_EDIT);
                     finish();
                 }else{
-
                     Toast.makeText(SplashActivity.this,"Not correct pass",Toast.LENGTH_LONG).show();
                     button.setVisibility(View.VISIBLE);
                 }
@@ -134,13 +109,9 @@ public class SplashActivity extends Activity {
 
                     }
                 });
-
         builder.show();
 
-
     }
-    //==============================================================================================
-
     public void exit(View view){
         showNoticeDialog();
     }
@@ -161,14 +132,12 @@ public class SplashActivity extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         Log.d(LOG_TAG, " onDestroy()");
-
     }
 
 
     public  boolean loadBoolean() {
 
         Boolean state ;
-
         SharedPreferences sharedPreferences = PreferenceManager
                 .getDefaultSharedPreferences(getApplicationContext());
 
@@ -186,8 +155,6 @@ public class SplashActivity extends Activity {
         if(state==null)
             state = false;
         return state ;
-
-
 
     }
 

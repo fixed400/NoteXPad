@@ -77,12 +77,10 @@ public class DB {
         return mDb.insert(DATABASE_TABLE, null, initialValues); //ставить в таблицу
     }
 
-
     public boolean deleteNote(long rowId) {
 
         return mDb.delete(DATABASE_TABLE, FIELD_ROWID + "=" + rowId, null) > 0;
     }
-
 
     public Cursor getAllContents() {
 
@@ -126,7 +124,6 @@ public class DB {
         return _idCursor;
 
     }
-
 
     public boolean updateNote(long rowId, String title, String body,String date) {
         ContentValues args = new ContentValues();

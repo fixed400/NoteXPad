@@ -167,13 +167,7 @@ public class ContentsListActivity extends ListActivity {
             setListAdapter(simpleCursorAdapter);
         }
 
-
-
-
-        //-------filter-----------------
-
         final EditText myFilter = (EditText) findViewById(R.id.searchFilter);
-
         myFilter.addTextChangedListener(new TextWatcher() {
 
             public void afterTextChanged(Editable s) {
